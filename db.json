@@ -7,5 +7,27 @@
     ],
     "profile": {
       "name": "typicode"
-    }
+    },
+    "clients":[
+        {
+            "id":123454678,
+            "response":{
+                "error":0,
+                "error-description":"",
+                "client":{
+                        "name":"Juan Amador",
+                        "segment":"VIP"
+                }
+            }
+        },
+        {
+            "id":123454679,
+            "response":{
+                "error":100,
+                "error-description":"not found",
+                "client":null
+            }
+
+        }
+    ]
   }
