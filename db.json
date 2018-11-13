@@ -1,10 +1,9 @@
 {
     "clients":[
         {
-            "id":123454678,
+            "id":12345678,
+            "pass":1234,
             "response":{
-                "error":0,
-                "error-description":"",
                 "client":{
                         "name":"Juan Amador",
                         "segment":"VIP"
@@ -12,13 +11,155 @@
             }
         },
         {
-            "id":123454679,
+            "id":12345679,
+            "pass":1234,
             "response":{
-                "error":100,
-                "error-description":"not found",
-                "client":null
+                "client":{
+                    "name":"Matías Moya",
+                    "segment":"Selecta"
+                }
             }
-
+        },
+        {
+            "id":12345680,
+            "pass":1234,
+            "response":{
+                "client":{
+                    "name":"Jorge Moyano",
+                    "segment":"Selecta"
+                }
+            }
         }
-    ]
-  }
+    ],
+    "products":[
+        {
+            "id":12345678,
+            "response":{
+                "product":[
+                    {
+                        "number":"1234-0987-4567-7777",
+                        "name":"Tarjeta Visa Banco del Sur",
+                        "type":"titular"
+                    }
+                    ]
+            }
+        },
+        {
+            "id":12345679,
+            "response":{
+                "product":[
+                    {
+                        "number":"1234-0987-4567-9999",
+                        "name":"Tarjeta Mastercard Banco del Sur",
+                        "type":"titular"
+                    },
+                    {
+                        "number":"1234-0987-8888-5674",
+                        "name":"Tarjeta Visa Banco del Sur",
+                        "type": "extensión"
+                    }
+                    ]
+            }
+         }
+    ],
+    "product-reset": [
+            {
+                "number":"1234-0987-4567-7777",
+                "response":{
+                    "error":0,
+                    "error-description":""
+                }
+            },
+            {
+                "number":"1234-0987-4567-9999",
+                "response":{
+                    "error":-1,
+                    "error-description":"error: tarjeta robada"
+                }
+            },
+            {
+                "number":"1234-0987-8888-5674",
+                "response":{
+                    "error":-1,
+                    "error-description":"error: tarjeta inactiva"
+                }
+            }
+        ]
+    ,
+    "account-balance":[
+        {
+            "id":12345678,
+            "response":{
+                 "balance":850.00
+            }
+         },
+         {
+            "id":12345679,
+            "response":{
+                 "balance":0
+            }
+         },
+         {
+            "id":12345680,
+            "response":{
+                 "balance":23900.00
+            }
+         }
+        ],
+    "account-movements":[
+        {
+            "id":12345678,
+            "response":{
+                 "movements":[
+                     {
+                        "date":"2018-12-01",
+                        "ammount":-300
+                     },
+                     {
+                        "date":"2018-12-01",
+                        "ammount":-450
+                     },
+                     {
+                        "date":"2018-12-02",
+                        "ammount":-1250
+                     }
+                 ]
+            }
+         },
+         {
+            "id":12345679,
+            "response":{
+                 "movements":[
+                     {
+                        "date":"2018-12-01",
+                        "ammount":-1300
+                     },
+                     {
+                        "date":"2018-12-02",
+                        "ammount":-850
+                     },
+                     {
+                        "date":"2018-12-02",
+                        "ammount":-2850
+                     }
+                 ]
+            }
+         },
+         {
+            "id":12345680,
+            "response":{
+                 "movements":[
+                     {
+                        "date":"2018-12-01",
+                        "ammount":-500
+                     },
+                     {
+                        "date":"2018-12-01",
+                        "ammount":-750
+                     }
+                 ]
+            }
+         }
+        ]
+    }
+
